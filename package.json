@@ -1,0 +1,14 @@
+{
+  "name": "premium-car-wash-system",
+  "version": "1.0.0",
+  "description": "Premium Car Wash Management System",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server start",
+    "client": "npm --prefix client dev",
+    "install-all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
