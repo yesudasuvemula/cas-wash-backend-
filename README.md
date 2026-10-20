@@ -48,6 +48,19 @@ A full-stack, owner-only Car Wash & Society Subscription Management System engin
 
 ---
 
+## Deploying to Render
+
+Deploy the repository as a Render Blueprint using the root `render.yaml`. It creates:
+
+- `cas-wash-backend`, which installs dependencies from `server/package-lock.json` and starts the API with `npm start`.
+- `cas-wash-frontend`, which installs dependencies from `client/package-lock.json`, builds the Vite app, and publishes `client/dist`.
+
+Set `MONGODB_URI` and `JWT_SECRET` for the backend when prompted. After the backend is deployed, set `VITE_API_URL` on the frontend to the backend URL ending in `/api` (for example, `https://cas-wash-backend.onrender.com/api`), then redeploy the frontend.
+
+Do not use the root `npm run dev` command as the Render start command; it launches local development servers and is not the production deployment setup.
+
+---
+
 ## 🚀 Running the Application Locally
 
 ### Prerequisites
@@ -72,4 +85,3 @@ npm run dev
 The Vite development server will start on `http://localhost:5174/` (or `http://localhost:5173/`).
 
 ---
-

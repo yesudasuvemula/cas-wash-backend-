@@ -128,7 +128,7 @@ export default function Payments() {
   };
 
   const handleExportCSV = (type) => {
-    window.open(`http://localhost:5000/api/reports/export-csv?type=${type}&month=${selectedMonth}`, '_blank');
+    window.open(api.getExportUrl(type, selectedMonth), '_blank');
   };
 
   const handleGenerateBills = async () => {
