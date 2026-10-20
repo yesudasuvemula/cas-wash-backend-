@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: cas-wash-backend
+    runtime: node
+    rootDir: server
+    buildCommand: npm ci
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
