@@ -73,23 +73,3 @@ The Vite development server will start on `http://localhost:5174/` (or `http://l
 
 ---
 
-## 🔐 Owner Login Credentials
-
-- **Username / Identifier**: `yesudasu`
-- **Password**: `yesudasu7778`
-
----
-
-## ⚙️ Environment Variables Configuration (`server/.env`)
-
-```env
-PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/carwash_db
-JWT_SECRET=carwash_super_secret_jwt_key_2026_premium_mgmt
-ADMIN_USERNAME=yesudasu
-ADMIN_EMAIL=yesudasuvemula.com
-ADMIN_PASSWORD=yesudasu7778
-CLIENT_URL=http://localhost:5173
-WHATSAPP_PHONE_NUMBER_ID=
-WHATSAPP_ACCESS_TOKEN=
-```
